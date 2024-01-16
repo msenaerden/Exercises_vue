@@ -10,10 +10,6 @@ body {
   margin: 0;
 }
 
-.active {
-  background-color: orange;
-  border: 2px dashed #980707;
-}
 
 header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -37,5 +33,10 @@ header {
   width: calc(100% - 32px);
   height: 100px;
   margin: 16px;
-  border: 2px dashed #ccc;
+  border: 2px dashed #7d7d7d;
+}
+
+.active {
+  border-color: red;
+  background-color: salmon;
 }
