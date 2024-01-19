@@ -49,6 +49,7 @@ header {
   padding: 0.5rem;
   color: #1f1f1f;
   border-radius: 25px;
+  cursor: pointer
 }
 
 #user-goals input {
