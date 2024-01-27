@@ -9,12 +9,6 @@ const app = Vue.createApp({
   methods: {
     addGoal() {
       this.goals.push(this.enteredGoalValue);
-
-      resetInput();
-    },
-
-    resetInput() {
-      this.enteredGoalValue = "";
     },
 
     removeGoal(idx) {

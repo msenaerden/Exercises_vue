@@ -1,24 +1,25 @@
 const app = Vue.createApp({
   data() {
     return {
-      enteredGoalValue: "",
-      goals: [],
+      inputClass: "",
+      paragraphIsVisible: true,
+      inputBackgroundColor: "",
     };
   },
-
-  methods: {
-    addGoal() {
-      this.goals.push(this.enteredGoalValue);
-
-      return resetInput;
+  computed: {
+    paraClasses() {
+      return {
+        user1: this.inputClass === "user1",
+        user2: this.inputClass === "user2",
+        visible: this.paragraphIsVisible,
+        hidden: !this.paragraphIsVisible,
+      };
     },
   },
-  resetInput() {
-    this.enteredGoalValue = "";
-  },
-
-  removeGoal(idx) {
-    this.goals.splice(idx, 1);
+  methods: {
+    toggleParagraphVisibility() {
+      this.paragraphIsVisible = !this.paragraphIsVisible;
+    },
   },
 });
 
